@@ -1,0 +1,277 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML><HEAD><TITLE>EMPREINTE CARBONE DES MAILS</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR>
+
+<SCRIPT language=javascript>
+<!-- Hide from browsers that do not understand Javascript  
+
+function calculcarbonne(carbonne) { 
+
+var testincr=document.carbonne.input.value;
+var testinagecr=document.carbonne.inputage.value;
+var theonecr;
+var sup_mail;
+
+for (i=0;i<document.carbonne.carbonnemorpho.length;i++){
+if (document.carbonne.carbonnemorpho[i].checked==true)
+theonecr=i;
+}
+
+for (i=0;i<document.carbonne.suppression.length;i++){
+if (document.carbonne.suppression[i].checked==true)
+sup_mail=i;
+}
+
+if (theonecr==0 )
+{
+document.carbonne.output.value=(testincr*12*4 + testinagecr*10);
+document.carbonne.output2.value=Math.round((testincr*12*4 + testinagecr*10) / 150);
+document.carbonne.piece_jointe.value="Souvent: Envoies moins de mails avec des pièces jointes, puisqu'une pièce jointe émet 50 g de CO2";
+//document.carbonne.output31.value="Souvent : Continues à supprimer tes mails, supprimes en plus, tu verras ton empreinte carbone diminuer";
+
+}
+else
+{
+if (theonecr==1 )
+{
+document.carbonne.output.value=(testincr*12*4 + testinagecr*10);
+document.carbonne.output2.value=Math.round((testincr*12*4 + testinagecr*10) / 150);
+document.carbonne.piece_jointe.value="Moyen: Envoies moins de mails avec des pièces jointes.";
+//document.carbonne.output31.value="Moyen : Continues à supprimes tes mails, pour diminuer l'effet de CO2";
+}
+else
+{
+document.carbonne.output.value=(testincr*12*4 + testinagecr*10);
+document.carbonne.output2.value=Math.round((testincr*12*4 + testinagecr*10) / 150);
+document.carbonne.piece_jointe.value="Rare : C'est bien continues ainsi";
+
+//document.carbonne.output31.value="Rare : Penses à notre planète, supprimes tes mails, tu peux aider à la sauver :-)";
+}
+}
+//Message : conseil
+if (document.carbonne.output2.value >450 ){
+if (document.carbonne.output2.value >700 ){
+document.carbonne.conseil.value = "BEAUCOUP ESSAYES DE SUPPRIMER DES MAILS !!!";
+}
+else{
+document.carbonne.conseil.value =  "Tu peux mieux faire";
+}
+}
+else{
+document.carbonne.conseil.value = "C'est bien, continues à supprimer tes mails";
+}
+
+// supression mail
+
+if (sup_mail==0 )
+{
+document.carbonne.output31.value="Souvent : Continues à supprimer tes mails, supprimes en plus, tu verras ton empreinte carbone diminuer";
+}
+else
+{
+if (sup_mail==1 )
+{
+document.carbonne.output31.value="Moyen : Continues à supprimes tes mails, pour diminuer l'effet de CO2";
+}
+else
+{
+document.carbonne.output31.value="Rare : Penses à notre planète, supprimes tes mails, tu peux aider à la sauver :-)";
+}
+}
+// Piece jointe
+
+
+}
+
+// end hiding --> 
+</SCRIPT>
+
+
+<STYLE type=text/css>.grandgras {
+	FONT-WEIGHT: bold; FONT-SIZE: 24px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.standard {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.standardsmall {
+	FONT-SIZE: 10px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.lienbleu {
+	FONT-SIZE: 12px; COLOR: #0000ff; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+	
+}
+</STYLE>
+</HEAD>
+<BODY style="FONT-SIZE: 10pt; COLOR: rgb(0,0,0); FONT-FAMILY: Arial" 
+vLink=#ffffff aLink=#000000 link=#ffffff bgColor=#408080 leftMargin=5 
+topMargin=5>
+<!--
+<P align=center><A href="http://iut-caen.unicaen.fr/"><SPAN 
+class=standard><IMG height=200 src="earth.jpg" width=250 
+border=0></SPAN></A></P>-->
+<P align=center><STRONG><FONT color=#ffcb00><SPAN class=grandgras>CALCULEZ VOTRE EMPREINTE CARBONE DES MAILS</SPAN></FONT></STRONG></P>
+<P align=center><SPAN class=standard><IMG height=4 
+alt="cadreseparateurblanc.gif (78 octets)" 
+src="Le poids idéal_fichiers/cadreseparateurblanc.gif" width=514 
+border=0></SPAN></P>
+<DIV align=center>
+<CENTER>
+<TABLE cellPadding=10 width=640 bgColor=#408080 border=0>
+  <TBODY>
+  <TR>
+    <TD width="100%">
+      <P align=justify><FONT color=#ffffff><SPAN class=standard> Les mails sont omniprésents dans nos vies quotidiennes et representent une part important 
+	  de l'émission des gaz à effet de serre. A ce jour où nous parlons du développement durable, il serait intéressant de diminuer notre empreinte carbone 
+	  notamment en supprimant nos mails. En effet, nos mails stockés et envoyés sont très énergivores et donc sont sources de pollution. 
+      <BR><BR>
+	  L'empreinte carbone permet de déterminer l'équivalent CO2 produit par les mails. 
+	  Ce calcul comprend le CO2 produit lors de l'envoi et surtout lors du stockage des mails.
+	  <BR><BR>
+      Calcul de l'empreinte carbone :
+	  <BR><BR>
+	  Quantité de CO2 produite au total par an = quantité de CO2 émise par l'envoi de mails pendant 1 mois × 12 + quantité de C02 émise lors du stockage des mails sur 1 an.
+	  <BR>
+	Quantité de CO2 émise par l'envoi de mails par mois = nombre de mails envoyés par mois × 4 Car 4 g de CO2 sont émis lors de l'envoi d'un mail en moyenne.
+	  <BR>
+	Quantité de CO2 émise lors du stockage de mails par an = nombre de mails stockés ×10 
+	  <BR>
+	Car 10 g de CO2 sont émis lors du stockage d'un mail pendant 1 an.
+	  <BR>
+	  <BR>
+	  Équivalence de l'empreinte carbone en km en voiture = Quantité de CO2 produite au total par an / 150
+	  <BR>
+	  Car 150 g équivaut en moyenne à la quantité de CO2 produite lors d'un trajet de 1 kilomètre en voiture.
+	  .</SPAN></FONT></P>
+      </SPAN></FONT></P></TD></TR></TBODY></TABLE></CENTER></DIV>
+
+
+<P align=center>&nbsp;</P>
+<DIV align=center>
+<CENTER>
+<TABLE cellPadding=4 width=608 bgColor=#ffcb00 border=1>
+  <TBODY>
+  <TR>
+    <TD width="100%">
+      <TABLE width=600 bgColor=#408080 border=1>
+        <TBODY>
+        <TR>
+          <TD width="100%">
+            <FORM name=carbonne>
+            <DIV align=center>
+            <CENTER>
+            <P><SPAN class=standard><STRONG><FONT color=#ffffff> Mails envoyés en moyenne par mois  </FONT></STRONG><INPUT size=15 
+            name=input type="number" placeholder="34"></SPAN></P></CENTER></DIV>
+            
+			<DIV align=center>
+            <CENTER>
+            <P><SPAN class=standard><STRONG><FONT color=#ffffff> Mails stockés dans votre boite mail  </FONT></STRONG><INPUT size=15 
+            name=inputage placeholder="1234" type="number"></SPAN></P></CENTER></DIV>
+           
+		   <DIV align=center>
+            <CENTER>
+            <P><SPAN class=standard><STRONG><FONT color=#ffffff>Envoies tu des mails avec des pièces jointes : <INPUT type=radio name=carbonnemorpho> : Souvent 
+            <INPUT type=radio name=carbonnemorpho> : Moyen <INPUT type=radio 
+            name=carbonnemorpho> : Rare</FONT></STRONG></SPAN></P></CENTER></DIV>
+			
+			<DIV align=center>
+            <CENTER>
+            <P><SPAN class=standard><STRONG><FONT color=#ffffff>Supprimes tu tes mails envoyés ou réçus   : <INPUT type=radio name=suppression> :  Souvent 
+            <INPUT type=radio name=suppression> : Moyen <INPUT type=radio  name=suppression> : Rare</FONT></STRONG></SPAN></P></CENTER></DIV>
+			
+            <DIV align=center>
+            <CENTER>
+            <P><SPAN class=standard><INPUT onclick=calculcarbonne(carbonne) type=button value=Calculer name=bouton></SPAN></P></CENTER></DIV>
+            
+			
+			
+			<DIV align=center>
+            <CENTER>
+            <P><SPAN class=standard><STRONG><FONT color=#ffffff> VOTRE EMPREINTE CARBONE EST DE : </FONT></STRONG><INPUT 
+            size=15 name=output> <STRONG><FONT color=#ffffff> grammes de CO2</FONT></STRONG></SPAN></P></CENTER></DIV>
+			
+			<DIV align=center>
+            <CENTER>
+            <P><SPAN class=standard><STRONG><FONT color=#ffffff> Cela équivaut à : </FONT></STRONG><INPUT 
+            size=15 name=output2> <STRONG><FONT color=#ffffff> km en voiture</FONT></STRONG></SPAN></P></CENTER></DIV>
+			
+            <DIV align=center>
+            <CENTER>
+            <P><SPAN class=standard><STRONG><FONT color=#ffffff> Pièce jointe : </FONT></STRONG>   <INPUT size=35 name=piece_jointe> 
+            <STRONG><FONT 
+            color=#AEF30E></FONT></STRONG></SPAN></P></CENTER></DIV>
+			
+			<DIV align=center>
+            <CENTER>
+            <P><SPAN class=standard><STRONG><FONT color=#ffffff> Supression mail : </FONT></STRONG>   <INPUT size=35 name=output31> 
+            <STRONG><FONT 
+            color=#AEF30E></FONT></STRONG></SPAN></P></CENTER></DIV>
+			
+			<DIV align=center>
+            <CENTER>
+            <P><SPAN class=standard><STRONG><FONT color=#ffffff> Avis: </FONT></STRONG>   <INPUT size=35 name=conseil> 
+            <STRONG><FONT 
+            color=#AEF30E></FONT></STRONG></SPAN></P></CENTER></DIV>
+			
+			</FORM></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></CENTER></DIV>
+			
+			
+			
+<P align=center>&nbsp;</P>
+<P align=center><SPAN class=standard><IMG height=4 
+alt="cadreseparateurblanc.gif (78 octets)" 
+src="Le poids idéal_fichiers/cadreseparateurblanc.gif" width=514 
+border=0></SPAN></P>
+<P align=center>&nbsp;</P>
+<DIV align=center>
+
+
+<CENTER>
+<TABLE cellPadding=2 width=800 bgColor=#ffcb00 border=1>
+  <TBODY>
+  <TR>
+    <TD width="100%">
+      <DIV align=center>
+      <CENTER>
+      <TABLE width="100%" bgColor=#808080 border=1>
+        <TBODY>
+        <TR>
+          <TD width="100%">
+            <P align=center><SPAN class=standard><FONT color=#ffcb00><STRONG>
+			<BR>
+			Conseils pour réduire votre empreinte carbone :
+			<BR>
+			<BR>
+			- Utiliser des applications pour nettoyer sa boîte mail comme Cleanfox.<BR>
+			- Supprimer les mails inutiles régulièrement.<BR>
+			- Privilégier l'envoi de SMS plutôt que l'envoi de mails quand c'est possible.<BR>
+			- Limiter la taille et le nombre de pièces jointes ainsi que le nombre de destinataires.<BR>
+			
+			</STRONG></FONT></SPAN></P>
+            
+            <DIV align=center>
+            <CENTER>
+            <TABLE cellPadding=4 width="80%" bgColor=#AEF30E border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%">
+                  <P align=center><SPAN class=standard><FONT color=#ffffff>
+				  
+                  vraiment        				  
+				  </FONT></SPAN></P></TD></TR></TBODY></TABLE></CENTER></DIV></TD></TR></TBODY></TABLE></CENTER></DIV></TD></TR></TBODY></TABLE></CENTER></DIV>
+
+
+
+<DIV align=center>
+
+<FORM>
+<DIV align=center>
+<CENTER>
+<P><STRONG><SPAN class=standard><INPUT onclick=self.close() type=button value=" Cliquez ici pour fermer cette fenêtre."></SPAN></STRONG></P></CENTER></DIV></FORM>
+<P align=center><STRONG><SPAN class=standard><IMG height=4 
+src="Le poids idéal_fichiers/cadreseparateurblanc.gif" width=514 border=0 
+?></SPAN></STRONG></P>
+<P align=center><STRONG><SPAN class=standard><IMG height=53 
+src="carbonne1.jpg" width=260 border=0></SPAN></STRONG></P>
+<P align=center><SPAN class=standardsmall><STRONG><FONT color=#ffffff>Droit IUT Grand Ouest Normandie - Caen 2022</FONT></STRONG></SPAN></P></B></BODY></HTML>
